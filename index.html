@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Web Components - Pratice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./src/styles/style.css" media="screen" />
+</head>
+
+<body>
+  <main>
+    <h2>We value your feedback</h2>
+    <section class="user-container">
+      <user-card name="Stephanie J. Wells" avatar="https://randomuser.me/api/portraits/women/2.jpg">
+        <span slot="role">Full Stack Engineer</span>
+        <span slot="email">jacobl@mail.com</span>
+        <span slot="phone">(305) 336-9168</span>
+
+        <star-rate data-rating="5" slot="rating" />
+      </user-card>
+
+      <user-card name="Gregory V. Pagan" avatar="https://randomuser.me/api/portraits/men/11.jpg">
+        <span slot="role">Customer Service</span>
+        <span slot="email">gregorypag@mail.com</span>
+        <span slot="phone">(305) 336-9168</span>
+
+        <star-rate data-rating="3" slot="rating" />
+      </user-card>
+
+      <user-card name="Bradley M. Fox" avatar="https://randomuser.me/api/portraits/men/19.jpg">
+        <span slot="role">Technical Support</span>
+        <span slot="email">bradleyfox@mail.com</span>
+        <span slot="phone">(305) 336-9168</span>
+
+        <star-rate data-rating="4" slot="rating" />
+      </user-card>
+
+      <user-card name="Michael P. David" avatar="https://randomuser.me/api/portraits/men/39.jpg">
+        <span slot="role">Back End Engineer</span>
+        <span slot="email">michaelp@mail.com</span>
+        <span slot="phone">(501) 388-8968</span>
+
+        <star-rate data-rating="4" slot="rating" />
+      </user-card>
+
+      <user-card name="Angela J. Sanders" avatar="https://randomuser.me/api/portraits/women/43.jpg">
+        <span slot="role">Front End Engineer</span>
+        <span slot="email">angelosand@mail.com</span>
+        <span slot="phone">(501) 398-7307</span>
+
+        <star-rate data-rating="4" slot="rating" />
+      </user-card>
+    </section>
+
+    <div class="waves-top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#dc851f" fill-opacity="1"
+          d="M0,96L48,85.3C96,75,192,53,288,69.3C384,85,480,139,576,138.7C672,139,768,85,864,96C960,107,1056,181,1152,186.7C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+
+    <div class="waves-bottom">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#dc851f" fill-opacity="1"
+          d="M0,224L40,218.7C80,213,160,203,240,213.3C320,224,400,256,480,266.7C560,277,640,267,720,234.7C800,203,880,149,960,154.7C1040,160,1120,224,1200,245.3C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+  </main>
+
+  <script src="./src/scripts/userCard.js" defer />
+  </script>
+  <script src="./src/scripts/starRate.js" defer></script>
+</body>
+
+</html>
